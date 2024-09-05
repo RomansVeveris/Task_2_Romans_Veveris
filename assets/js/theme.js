@@ -3,11 +3,10 @@ const menu = document.getElementById('menu');
 const closeButton = document.getElementById('close-menu');
 
 menuButton.addEventListener('click', function() {
-  // Переключаем класс 'menu', чтобы показывать/скрывать его
   if (menu.style.display === 'none' || menu.style.display === '') {
-    menu.style.display = 'block'; // Показываем меню
+    menu.style.display = 'block'; 
   } else {
-    menu.style.display = 'none'; // Скрываем меню
+    menu.style.display = 'none'; 
   }
 });
 
@@ -23,13 +22,10 @@ closeButton.addEventListener('click', function() {
 
 });
 
-
-
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const button = document.getElementById('scroll-to-top');
 
-    // Показать/скрыть кнопку в зависимости от прокрутки
+
     window.addEventListener('scroll', function() {
         if (window.scrollY > 200) { // Показывать кнопку, если прокрутка больше 200px
             button.style.display = 'block';
@@ -38,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Переход к верху страницы при клике на кнопку
     upArrow.addEventListener('click', function() {
         window.scrollTo({
             top: 0,
