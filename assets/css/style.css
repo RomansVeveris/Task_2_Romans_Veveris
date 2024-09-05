@@ -155,7 +155,7 @@ a {
 	z-index: 5;
 	top: 43.45%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Центрирует SVG относительно его середины */
+    transform: translate(-50%, -50%);
 }
 .inner-gallery-content-smaller-768px {
 	display: none;
@@ -171,7 +171,7 @@ a {
 }
 .LV-EN-RU {
 	display: flex;
-    align-items: flex-start; /* Выравнивание текста по верху */
+    align-items: flex-start;
     justify-content: center;
 
     width: 29px;
@@ -555,7 +555,7 @@ main {
 	margin-top: -19px;
 }
 footer {
-    margin: 0 auto; /* Центрует футер */
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -731,8 +731,6 @@ footer {
 		background-color: transparent;
 		cursor: pointer;
 	}
-
-	/* Скрываем меню по умолчанию */
 	.menu {
 	  display: none;
 	  position: absolute;
@@ -804,7 +802,7 @@ footer {
 	 .LV { font-weight: 700; line-height: 24px; font-size: 24px; }
 
 	 .LV::after {
-	   content: ''; /* Обязательное свойство для псевдоэлемента */
+	   content: '';
 	   position: absolute;
 	   bottom: -6px; 
 	   left: 4px;
@@ -831,8 +829,6 @@ footer {
 		text-align:center;
 	}
 	.nav-btns { height: 24px; line-height: 29.2px; }
-
-
 
 	.tablet-menu-btn { position: relative; width: 25px; height: 25px; padding: 0; }
 
@@ -887,8 +883,6 @@ footer {
 	.text-left { width: 400px; }
 	.footer-bg { min-height: 393px; }
 	footer { height: 393px; }
-
-
 	.hidden-text { display: block; margin-top: 25px;}
 }
 
@@ -918,7 +912,6 @@ footer {
 	.main-text { width: 100%; padding: 0px; margin-top: -4px;}
 	.inner-text { font-size: 12px; padding: 0px 20px 0px 20px; margin-top: 80px; margin-bottom:92px;}
 
-
 	/* Main gallery */
 	.gallery-content {
 		display: flex;
@@ -932,7 +925,6 @@ footer {
 		width: 100%;
 		max-width: 704px;
 		padding-bottom: 60px;
-
 	}
 	.inner-column {
 		display: flex;
@@ -997,7 +989,6 @@ footer {
 	.choosing-column2 { margin-top: 114px; }
 	.choosing-container { gap: 30px; display: flex; margin-top: -65px; padding: 0 20px 0 20px; align-items: center; }
 	.h3-oswald { font-size: 18px; line-height: 26.7px; }
-
 
 	/* Contact us */
 
@@ -1188,7 +1179,6 @@ footer {
 	.vector2 { top: -35px; }
 }
 
-
 input[type="checkbox"] {
   appearance: none;
   display: flex;
@@ -1212,28 +1202,3 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
-/* TODO: 
-	# Fix resize on ipads for first gallery, it should become smaller and not to move all photos
-	# Fix first gallery, fix vector and photos going through vectors, fix it for mobile view and align it
-	# Fix second gallery, fix photo align, and make photos split only on 2 columns (not 1 and max scope)
-	# Fix footer for phone, also for ipads, check it
-	> Using JavaScript or not, add changing languages section (Looks similar for ipad and phones, test it)
-	> Get to something, creating at least a small menu for pc version (also using JavaScript probably)
-	# Fix the first video play button (it doesnt resize properly on different scales)
-	# Fix contact form (name-surname, emails) size for phone and ipads.
-	# Find a way to look at a page like from phone or ipad, check everything with pixel perfect.
-	# Currently looking from phone, page loads as a page for ipads -> needs to be fixed.
-	> Explore PostCSS plugins etc. Learn how to make code smaller, how others do it, maybe
-	  find out, is it necessary to use variables at this moment.
-	# Explore CSS classes.
-	> Create github project and test it from different pc.
-	> Explore TinyPNG and make compressed photos to the website.
-	> Download Opera, Mozilla, Edge, Safari. Check how the website looks on them.
-	> Create a fixed anchor link, which, when clicked, scrolls up the page regardless of where the user is on the page.
-	  Find a favicon from figma or find another one.
-	# The shadow under header is not seen when phone or ipad is used watching the page.
-
-	* Fix all code and make it smaller, at this moment is quite big...
-	* Change all text classes to commons ones: h1, h2, h3, h4, p, p-oswald or smth
-	* Rename some div classes, to make it more readable and understandable
-*/
